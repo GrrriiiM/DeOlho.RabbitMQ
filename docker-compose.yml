@@ -5,5 +5,3 @@ deolho-rabbitmq:
   ports:
     - "11001:15672"
     - "11002:5672"
-  labels:
-    NAME: "deolho-rabbitmq"
