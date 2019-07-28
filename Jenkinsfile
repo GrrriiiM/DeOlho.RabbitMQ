@@ -8,6 +8,9 @@ def exec(cmd) {
 }
 
 node {
+    stage('Git pull') {
+        checkout scm
+    }
     stage('Docker-compose up') {
         exec('docker-compose up -d')
     }
