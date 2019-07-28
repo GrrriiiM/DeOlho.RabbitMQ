@@ -1,0 +1,9 @@
+deolho-rabbitmq:
+  image: "rabbitmq:3-management"
+  env_file:
+      - .env
+  ports:
+    - "11001:15672"
+    - "11002:5672"
+  labels:
+    NAME: "deolho-rabbitmq"
