@@ -1,5 +1,6 @@
 deolho-rabbitmq:
   image: "rabbitmq:3-management"
+  restart: unless-stopped
   env_file:
       - .env
   ports:
